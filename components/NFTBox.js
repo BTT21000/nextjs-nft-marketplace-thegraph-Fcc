@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { useWeb3Contract, useMoralis } from "react-moralis"
 import nftMarketplaceAbi from "../constants/NftMarketplace.json"
 import nftAbi from "../constants/BasicNft.json"
+import Image from "next/image"
 import { Card, useNotification } from "web3uikit"
 import { ethers } from "ethers"
 import UpdateListingModal from "./UpdateListingModal"
@@ -120,7 +121,7 @@ export default function NFTBox({ price, nftAddress, tokenId, marketplaceAddress,
                                     <div className="italic text-sm">
                                         Owned by {formattedSellerAddress}
                                     </div>
-                                    <img
+                                    <Image
                                         loader={() => imageURI}
                                         src={imageURI}
                                         height="200"
