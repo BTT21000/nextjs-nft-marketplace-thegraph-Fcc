@@ -1,6 +1,3 @@
-import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
 import { useMoralisQuery, useMoralis } from "react-moralis"
 import NFTBox from "../components/NFTBox"
 import networkMapping from "../constants/networkMapping.json"
